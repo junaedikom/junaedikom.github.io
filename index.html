@@ -17,7 +17,13 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Varela+Round&display=swap" rel="stylesheet"> 
 
-    <title>MY DIARY BLOGGING</title>
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>My Diary</title>
   </head>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,10 +34,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
@@ -46,52 +52,156 @@
   </nav>
 
   <body>
+
+    <!-- CONTENT -->
     <div class="container">
-      <h1>HEADING TEXT</h1>
-      <h2>Sub Heading Text</h2>
+      
+      <div class="row" id="primary">
 
-      <h3>Blog Post</h3>
-       <a href="#" target="_blank" class="badge">
-          <i class="fa fa-user"> Brad Hussey</i>
-       </a>
+        <!-- Blog Content -->
+        <main id="content" class="col-sm-8" role="main">
+          <article class="post">
 
-       <a href="#" target="_blank" class="badge">
-          <i class="fa fa-user"> Brad Hussey</i>
-       </a>
-      <p class="paragraf dashed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <header>
+              <h3 class="dashed"><a href="post.html">Blog Post Title</a></h3>
 
+              <i class="fa fa-user"></i>
+              <a href="#" target="_blank" class="badge">Brad Hussey</a> 
 
-      <a href="#">Regular & Hover Link</a>
+              <i class="fa fa-clock-o"></i>
+              <a href="#" target="_blank" class="badge"><time>7 Agustus 2019</time></a>
+              
+              <i class="fa fa-comment"></i>
+              <a href="#" target="_blank" class="badge">Comments 4</a>
 
-      </br>
-      </br>
+            </header>
 
-      <button class="btn btn-one">
-        <a href="#">Button</a>
-      </button>
+            <div class="post-image">
+              <img class="img-fluid" alt="Responsive image" src="assets/img/tulip-bg.jpg">
+            </div> <!-- post-image -->
 
-      <br> <br>
+            <div class="post-excerpt dashed">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia.....</p>
 
-      <div class="row">
-        <div class="col-lg-4">
-              <a href="https://twitter.com/bradhussey" target="_blank" class="badge social twitter">
-                <i class="fa fa-twitter"> Twitter</i>
-              </a> <!-- twitter icon -->
-              <a href="https://facebook.com/bradhussey" target="_blank" class="badge social facebook">
-                <i class="fa fa-facebook"> Facebook</i>
-              </a> <!-- facebook icon -->
-              <a href="https://plus.google.com/bradhussey" target="_blank" class="badge social gplus">
-                <i class="fa fa-google-plus"> Google Plus</i>
-              </a> <!-- gplus icon -->
-        </div> <!-- end col -->
+              <button class="btn btn-one">
+                <a href="#">Continue Reading</a>
+              </button>
+
+            </div> <!-- post-excerpt -->
+
+          </article> <!-- post -->
+
+          <article class="post">
+
+            <header>
+              <h3 class="dashed"><a href="post.html">Blog Post Title</a></h3>
+              <i class="fa fa-user"></i>
+              <a href="#" target="_blank" class="badge">
+                  Brad Hussey
+              </a>
+              <i class="fa fa-clock-o"></i>
+              <a href="#" target="_blank" class="badge">
+                  <time> 7 Agustus 2019</time>
+              </a>
+              <i class="fa fa-comment"></i>
+              <a href="#" target="_blank" class="badge">
+                   Comments 4
+              </a>
+            </header>
+
+            <div class="post-image">
+              <img class="img-fluid" alt="Responsive image" src="assets/img/tulip-bg.jpg">
+            </div> <!-- post-image -->
+
+            <div class="post-excerpt dashed">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia.....</p>
+
+              <button class="btn btn-one">
+                <a href="#">Continue Reading</a>
+              </button>
+
+            </div> <!-- post-excerpt -->
+
+          </article> <!-- post -->
+
+        </main> <!-- content col-sm-8 -->
+
+        <!-- Blog Sidebar -->
+        <aside class="col-sm-4">
+
+          <!-- Widget Sidebar -->
+
+          <div class="card">
+            <h6 class="card-header">Search</h6>
+            <div class="card-body dashed">
+              <form role="form" class="search-form">
+                <label for="sidebar-search" class="sr-only">Search the Blog</label>
+                <input type="text" id="sidebar-search" class="form-control" placeholder="search here" name="">
+              </form>
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+
+          <div class="card">
+            <h6 class="card-header">About Me</h6>
+            <div class="card-body dashed">
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div> <!-- card body -->
+          </div> <!-- card -->
+
+          <div class="card">
+            <h6 class="card-header">Categories</h6>
+            <div class="card-body dashed">
+
+            <ul>
+              <li><a href="">Category #1</a></li>
+              <li><a href="">Category #2</a></li>
+              <li><a href="">Category #3</a></li>
+              <li><a href="">Category #4</a></li>
+              <li><a href="">Category #5</a></li>
+              <li><a href="">Category #6</a></li>
+            </ul>
+              
+            </div> <!-- card body -->
+          </div> <!-- card -->
+
+          <div class="card">
+            <h6 class="card-header">Recent Posts</h6>
+            <div class="card-body dashed">
+
+            <ul>
+              <li><a href="">Blog Post #1</a></li>
+              <li><a href="">Blog Post #2</a></li>
+              <li><a href="">Blog Post #3</a></li>
+              <li><a href="">Blog Post #4</a></li>
+              <li><a href="">Blog Post #5</a></li>
+              <li><a href="">Blog Post #6</a></li>
+            </ul>
+              
+            </div> <!-- card body -->
+          </div> <!-- card -->
+          
+        </aside> <!-- sidebar col-sm-4 -->
+
       </div> <!-- row -->
 
     </div> <!-- container -->
+
+    <footer id="sticky-footer" class="py-4">
+     <div class="container text-center">
+        <small>© 2014 Start Up. All Rights Reserved.</small>
+     </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
